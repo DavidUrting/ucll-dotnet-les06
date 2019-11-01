@@ -38,7 +38,7 @@ namespace AdventureWorks.Domain
             {
                 Entities.Customer customer = dbContext.Customer
                     .Include(c => c.Person)
-                    .Where(c => c.CustomerId == id)
+                    .Where(c => c.CustomerId == id && c.Person != null)
                     .FirstOrDefault();
                 if (customer != null)
                 {
