@@ -60,7 +60,7 @@ namespace AdventureWorks.Console
 
         private static void WriteCustomer(Customer c)
         {
-            System.Console.WriteLine($"  ID         : {c.ID}");
+            System.Console.WriteLine($"  ID         : {c.Id}");
             System.Console.WriteLine($"  First name : {c.FirstName}");
             System.Console.WriteLine($"  Last name  : {c.LastName}");
         }
